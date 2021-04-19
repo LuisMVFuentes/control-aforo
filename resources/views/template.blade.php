@@ -29,7 +29,7 @@
     <header>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="{{ route('home')}}">
                 <img src="img/control-af.png" width="30" height="30" class="d-inline-block align-top" alt="control-af">
                 Control AF
             </a>
@@ -39,10 +39,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="home"><i class="bi bi-house-door"></i> Inicio</a>
+                        <a class="nav-link text-white" href="{{ route('home')}}"><i class="bi bi-house-door"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="explorar"><i class="bi bi-compass"></i> Explorar</a>
+                        <a class="nav-link text-white" href="{{ route('xplorer')}}"><i class="bi bi-compass"></i> Explorar</a>
                     </li>
                 </ul>
             </div>

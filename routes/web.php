@@ -15,12 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::get('home', function () {
-    return view('home');
-});
-
-Route::get('explorar', function () {
+Route::get('Explorar', function () {
     return view('buscar-local');
-});
+})->name('xplorer');
