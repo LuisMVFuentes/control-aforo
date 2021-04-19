@@ -9,7 +9,7 @@ class Estado extends Migration
     public function up()
     {
         Schema::create('Estado', function (Blueprint $table) {
-            $table->increments('idEstado')->primary();
+            $table->increments('idEstado');
             $table->string('descripcion', 10)->nullable();
         });
     }
