@@ -21,11 +21,8 @@ Route::get('Explorar', function () {
     return view('buscar-local');
 })->name('xplorer');
 
+Route::get('locals', function () {
+    return view('locals');
+})->name('locals');
 
-Route::get('Conectar', function () {
-    return view('conexion');
-})->name('conexion');
 
-Route::get('conexion_db', function () {
-    return view('conexion_db');
-})->name('conexion_db');

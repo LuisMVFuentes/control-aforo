@@ -45,7 +45,7 @@
                         <a class="nav-link text-white" href="{{ route('xplorer')}}"><i class="bi bi-compass"></i> Explorar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('conexion')}}"><i class="bi bi-broadcast-pin"></i> Conectar</a>
+                        <a class="nav-link text-white" href="{{ route('locals')}}"><i class="bi bi-broadcast-pin"></i> Conectar</a>
                     </li>
                 </ul>
             </div>
