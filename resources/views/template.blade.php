@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('xplorer')}}"><i class="bi bi-compass"></i> Explorar</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ route('conexion')}}"><i class="bi bi-broadcast-pin"></i> Conectar</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -61,7 +64,7 @@
     </footer>
 
 
-    <script src="jns/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
 </html>

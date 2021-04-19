@@ -20,3 +20,12 @@ Route::get('/', function () {
 Route::get('Explorar', function () {
     return view('buscar-local');
 })->name('xplorer');
+
+
+Route::get('Conectar', function () {
+    return view('conexion');
+})->name('conexion');
+
+Route::get('conexion_db', function () {
+    return view('conexion_db');
+})->name('conexion_db');
