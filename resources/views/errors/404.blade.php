@@ -1,5 +1,8 @@
 @extends('template')
 
+
+@section('title', '404 ERROR')
+
 @section('content')
 
 
@@ -12,4 +15,4 @@
         </div>
     </div>
 </div>
-@stop
+@endsection

@@ -7,13 +7,12 @@ use Illuminate\Http\Request;
 class LocalController extends Controller
 {
     // public function index(){
-    public function index()
+    public function __invoke()
     {
 
         if (request()->has('empty')) {
             $locals = [];
         } else {
-
             $locals = [
                 'Banana',
                 'Potaxio',

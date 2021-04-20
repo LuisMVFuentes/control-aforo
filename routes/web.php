@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LocalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,8 +22,6 @@ Route::get('Explorar', function () {
     return view('buscar-local');
 })->name('xplorer');
 
-Route::get('locals', function () {
-    return view('locals');
-})->name('locals');
+Route::get('Locals', 'LocalController', 'empty')->name('locals');
 
 

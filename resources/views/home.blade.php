@@ -1,5 +1,7 @@
 @extends('template')
 
+@section('title', 'Home')
+
 @section('content')
 <div class="container">
     <h1 class="mt-5">¿En que consiste?</h1>
@@ -26,4 +28,5 @@
     </ul>
 
 </div>
-@stop
+
+@endsection

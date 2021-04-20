@@ -1,24 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('template')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+@section('title', 'Locals')
 
-<body>
-    <h1>Locals</h1>
-    <ul>
-        @if (!empty($users))
+@section('content')
+    <div class="container">
+    <h1 class="mt-5">¿En que consiste?</h1>
+        @forelse($locals as $local)
+            <p>{{ $local }}</p>
+        @empty
+            <p>No hay elementos que mostrar</p>
+        @endforelse
+    </div>
+        <!-- @if (!empty($users))
             @foreach ($locals as $local)
                 <li>{{ $local }}</li>
             @endforeach
         @else
             <p>No hay elementos</p>
-        @endif
-    </ul>
-</body>
+        @endif -->
 
-</html>
+
+@endsection

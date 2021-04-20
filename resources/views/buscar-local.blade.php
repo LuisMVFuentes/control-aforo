@@ -1,5 +1,7 @@
 @extends('template')
 
+@section('title', 'Buscar Local')
+
 @section('content')
 <div class="container">
     <h1 class="mt-5">Buscar Centros Vinculados</h1>
@@ -17,4 +19,4 @@
         </div>
     </div>
 </div>
-@stop
+@endsection
