@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\LocalModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use League\Flysystem\Adapter\Local;
 
 class LocalController extends Controller
 {
@@ -10,16 +13,9 @@ class LocalController extends Controller
     public function __invoke()
     {
 
-        if (request()->has('empty')) {
-            $locals = [];
-        } else {
-            $locals = [
-                'Banana',
-                'Potaxio',
-                'Marango'
-            ];
-        }
-        return view('locals', compact('locals'));
+        $locals = DB::table('Local')->get();
+        $title = 'Locales';
+        return view('locals', compact('locals', 'title'));
 
         // return view('locals')
         //     ->with('locals', $locals);
@@ -35,5 +31,17 @@ class LocalController extends Controller
 
         // return view('index', compact('title', 'locals'));
 
+    }
+
+    public function show($idLocal)
+    {
+        $locals = LocalModel::all();
+
+
+        $local = $locals->find($idLocal);
+
+        dd($local);
+
+        return view('showlocal', compact('local', 'title', 'idLocal'));
     }
 }

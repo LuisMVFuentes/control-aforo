@@ -8,16 +8,16 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- Custom Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
     <!-- ICON/PNG -->
-    <link rel="shortcut icon" href="img/control-af.png" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('img/control-af.png') }}" type="image/png">
 
     <!-- Custom styles for this template -->
-    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="{{ asset('css/sticky-footer-navbar.css') }}" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
@@ -30,7 +30,7 @@
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="{{ route('home')}}">
-                <img src="img/control-af.png" width="30" height="30" class="d-inline-block align-top" alt="control-af">
+                <img src="{{ asset('img/control-af.png')}}" width="30" height="30" class="d-inline-block align-top" alt="control-af">
                 Control AF
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,11 +42,9 @@
                         <a class="nav-link text-white" href="{{ route('home')}}"><i class="bi bi-house-door"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('xplorer')}}"><i class="bi bi-compass"></i> Explorar</a>
+                        <a class="nav-link text-white" href="{{ route('locals')}}"><i class="bi bi-compass"></i> Explorar</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('locals')}}"><i class="bi bi-broadcast-pin"></i> Conectar</a>
-                    </li>
+     
                 </ul>
             </div>
         </nav>
@@ -64,7 +62,7 @@
     </footer>
 
 
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('js/jquery-3.5.1.slim.min.js') }}"></script>
+    <script src="{{ asset('s/bootstrap.bundle.min.js') }}"></script>
 
 </html>

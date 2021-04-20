@@ -19,9 +19,12 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('Explorar', function () {
-    return view('buscar-local');
+    return view('local');
 })->name('xplorer');
 
 Route::get('Locals', 'LocalController', 'empty')->name('locals');
 
+
+Route::get('Locals/{id}', 'LocalController@show')
+    ->where('id', '[0-9]+');
 
